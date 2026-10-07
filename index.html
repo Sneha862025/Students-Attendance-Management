@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | ABC College of Computer Applications</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css"></head>
+<body data-page="login" data-access="public">
+<main class="login-page"><section class="login-card" aria-labelledby="loginTitle">
+<img class="logo" src="assets/logo.png" alt="ABC College of Computer Applications logo (replace assets/logo.png)">
+<h1 id="loginTitle">Welcome Back</h1><p class="college">ABC College of Computer Applications</p><p class="sys">Student Attendance Management System</p>
+<div id="loginMessage" class="message hidden" role="alert"></div>
+<form id="loginForm" novalidate style="margin-top:18px">
+<div class="field"><label for="loginId">Email / Student ID</label><input id="loginId" type="text" placeholder="student@gmail.com" autocomplete="username"></div>
+<div class="field"><label for="loginPassword">Password</label><input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password"></div>
+<fieldset class="role"><legend>Login As:</legend><div class="role-options">
+<label><input type="radio" name="role" value="student" checked> Student</label><label><input type="radio" name="role" value="teacher"> Teacher</label></div></fieldset>
+<div class="row"><label><input type="checkbox" id="rememberMe"> Remember me</label><a href="#" id="forgotPassword">Forgot password?</a></div>
+<button class="btn" type="submit">Login</button></form>
+<div class="demo"><strong>Demo logins</strong><br>Student: student@gmail.com / student123<br>Teacher: teacher@gmail.com / teacher123</div>
+</section></main>
+<script src="script.js"></script></body></html>

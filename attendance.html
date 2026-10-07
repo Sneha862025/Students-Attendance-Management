@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance | ABC College of Computer Applications</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css"></head>
+<body data-page="attendance" data-access="student" data-auth="pending">
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="home.html"><img src="assets/logo.png" alt="ABC College logo"><span>ABC College of<br>Computer Applications</span></a>
+<button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<nav id="mainNav" aria-label="Main navigation"><ul id="navLinks"></ul></nav></div></header>
+<main>
+<section class="page-head"><h1>Student Attendance Status</h1><p>Your detailed attendance report for this semester.</p></section>
+<!-- ================= STUDENT INFO ================= -->
+<section class="panel" aria-labelledby="infoTitle"><h2 id="infoTitle">Student Information</h2><dl class="student-info">
+<div><dt>Student Name</dt><dd id="infoName">-</dd></div><div><dt>Student ID</dt><dd id="infoId">-</dd></div><div><dt>Course</dt><dd id="infoCourse">-</dd></div><div><dt>Semester</dt><dd id="infoSemester">-</dd></div><div><dt>Section</dt><dd id="infoSection">-</dd></div></dl></section>
+<!-- ================= SUMMARY ================= -->
+<section aria-label="Attendance summary"><div class="stat-grid">
+<article class="stat-card"><span>Total Classes</span><strong id="totalClasses">0</strong></article>
+<article class="stat-card"><span>Classes Attended</span><strong id="attendedClasses">0</strong></article>
+<article class="stat-card"><span>Classes Absent</span><strong id="absentClasses">0</strong></article>
+<article class="stat-card"><span>Attendance Percentage</span><strong id="percentValue">0%</strong></article></div></section>
+<section class="panel section"><div class="progress-label"><span>Attendance Percentage</span><span id="percentLabel">0%</span></div>
+<div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Attendance percentage"><div class="progress-bar" id="progressBar"></div></div>
+<div id="statusMessage" class="message hidden" role="status"></div></section>
+<!-- ================= SUBJECT-WISE ================= -->
+<section class="section"><h2>Subject-wise Attendance</h2><div class="table-wrap"><table><thead><tr><th>Subject</th><th>Total Classes</th><th>Present</th><th>Absent</th><th>Percentage</th></tr></thead><tbody id="subjectBody"></tbody></table></div></section>
+<!-- ================= LOG ================= -->
+<section class="section"><h2>Recent Attendance Log</h2><div class="table-wrap"><table><thead><tr><th>Date</th><th>Subject</th><th>Teacher</th><th>Status</th></tr></thead><tbody id="attendanceBody"></tbody></table></div>
+<div class="btn-row"><button class="btn outline" type="button" data-goto="home.html">Back to Dashboard</button></div></section></main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer"><div class="foot-grid">
+<div><h3>ABC College of Computer Applications</h3><p>Student Attendance Management System</p></div>
+<nav aria-label="Quick links"><h3>Quick Links</h3><ul><li><a href="home.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="attendance.html">Attendance</a></li></ul></nav>
+<div><h3>Contact</h3><p>Email: info@abccollege.edu<br>Phone: +91 80 1234 5678<br>12 College Road, Bengaluru, Karnataka</p></div>
+<div><button class="btn" type="button" data-logout>Logout</button></div></div>
+<p class="copy">© 2026 ABC College of Computer Applications. All Rights Reserved.</p></footer>
+<script src="script.js"></script></body></html>

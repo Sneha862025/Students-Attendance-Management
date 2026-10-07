@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teacher Dashboard | ABC College of Computer Applications</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css"></head>
+<body data-page="teacher" data-access="teacher" data-auth="pending">
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="home.html"><img src="assets/logo.png" alt="ABC College logo"><span>ABC College of<br>Computer Applications</span></a>
+<button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<nav id="mainNav" aria-label="Main navigation"><ul id="navLinks"></ul></nav></div></header>
+<main>
+<section class="hero"><img src="assets/logo.png" alt="ABC College logo"><div><p class="college">ABC College of Computer Applications</p><h1>Teacher Dashboard</h1><p>Welcome, <span id="userName">Teacher</span>! Monitor attendance across all students.</p></div></section>
+<!-- ================= STATS ================= -->
+<section aria-label="Class statistics"><div class="stat-grid">
+<article class="stat-card"><span>Total Students</span><strong id="totalStudents">0</strong></article>
+<article class="stat-card"><span>Students Above 75%</span><strong id="aboveCount">0</strong></article>
+<article class="stat-card"><span>Students Below 75%</span><strong id="belowCount">0</strong></article>
+<article class="stat-card"><span>Average Attendance</span><strong id="averageAttendance">0%</strong></article></div></section>
+<!-- ================= STUDENT TABLE ================= -->
+<section class="section"><h2>All Students</h2>
+<div class="controls"><label for="searchInput" style="position:absolute;left:-9999px">Search students</label><input id="searchInput" type="search" placeholder="Search student... (ID, name or course)">
+<label for="filterSelect" style="position:absolute;left:-9999px">Filter students</label><select id="filterSelect"><option value="all">All Students</option><option value="above">Attendance Above 75%</option><option value="below">Attendance Below 75%</option></select></div>
+<p class="count" id="resultCount"></p>
+<div class="table-wrap"><table><thead><tr><th>Student ID</th><th>Student Name</th><th>Course</th><th>Semester</th><th>Section</th><th>Total Classes</th><th>Present</th><th>Absent</th><th>Attendance %</th><th>Status</th><th>Action</th></tr></thead><tbody id="studentBody"></tbody></table></div></section>
+<!-- ================= MODAL ================= -->
+<div id="studentModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box">
+<h2 id="modalTitle">Student Details</h2><dl class="student-info">
+<div><dt>Student Name</dt><dd id="modalName"></dd></div><div><dt>Student ID</dt><dd id="modalId"></dd></div><div><dt>Course</dt><dd id="modalCourse"></dd></div><div><dt>Semester</dt><dd id="modalSemester"></dd></div>
+<div><dt>Total Classes</dt><dd id="modalTotal"></dd></div><div><dt>Present</dt><dd id="modalPresent"></dd></div><div><dt>Absent</dt><dd id="modalAbsent"></dd></div><div><dt>Attendance</dt><dd id="modalPercent"></dd></div></dl>
+<h3 style="margin-top:20px">Subject-wise Attendance</h3><div class="table-wrap"><table><thead><tr><th>Subject</th><th>Total</th><th>Present</th><th>Absent</th><th>%</th></tr></thead><tbody id="modalSubjects"></tbody></table></div>
+<button class="btn" type="button" id="closeModalBtn">Close</button></div></div></main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer"><div class="foot-grid">
+<div><h3>ABC College of Computer Applications</h3><p>Student Attendance Management System</p></div>
+<nav aria-label="Quick links"><h3>Quick Links</h3><ul><li><a href="home.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="attendance.html">Attendance</a></li></ul></nav>
+<div><h3>Contact</h3><p>Email: info@abccollege.edu<br>Phone: +91 80 1234 5678<br>12 College Road, Bengaluru, Karnataka</p></div>
+<div><button class="btn" type="button" data-logout>Logout</button></div></div>
+<p class="copy">© 2026 ABC College of Computer Applications. All Rights Reserved.</p></footer>
+<script src="script.js"></script></body></html>

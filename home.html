@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | ABC College of Computer Applications</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="style.css"></head>
+<body data-page="home" data-access="any" data-auth="pending">
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="site-header"><div class="nav-wrap">
+<a class="brand" href="home.html"><img src="assets/logo.png" alt="ABC College logo"><span>ABC College of<br>Computer Applications</span></a>
+<button id="menuToggle" class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+<nav id="mainNav" aria-label="Main navigation"><ul id="navLinks"></ul></nav></div></header>
+<main>
+<!-- ================= WELCOME ================= -->
+<section class="hero" aria-labelledby="welcomeTitle"><img src="assets/logo.png" alt="ABC College logo">
+<div><p class="college">ABC College of Computer Applications</p><h1 id="welcomeTitle">Welcome, <span id="userName">User</span>! 👋</h1><p id="heroText">Track your attendance, monitor your progress and stay on top of your classes.</p></div></section>
+<!-- ================= STUDENT DASHBOARD ================= -->
+<section class="student-only" aria-label="Attendance summary"><div class="stat-grid">
+<article class="stat-card"><span>Total Working Days</span><strong id="statTotal">0</strong></article>
+<article class="stat-card"><span>Days Present</span><strong id="statPresent">0</strong></article>
+<article class="stat-card"><span>Days Absent</span><strong id="statAbsent">0</strong></article>
+<article class="stat-card"><span>Attendance Percentage</span><strong id="statPercent">0%</strong></article></div>
+<div id="statusMessage" class="message hidden" role="status"></div>
+<div class="btn-row"><button class="btn" type="button" data-goto="attendance.html">View My Attendance</button><button class="btn outline" type="button" id="backToTop">Back to Dashboard</button></div></section>
+<!-- ================= TEACHER HOME ================= -->
+<section class="teacher-only hidden panel section"><h2>Teacher Dashboard</h2><p>View all students, search, filter and check detailed attendance reports.</p>
+<div class="btn-row"><button class="btn" type="button" data-goto="teacher.html">Open Teacher Dashboard</button></div></section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer"><div class="foot-grid">
+<div><h3>ABC College of Computer Applications</h3><p>Student Attendance Management System</p></div>
+<nav aria-label="Quick links"><h3>Quick Links</h3><ul><li><a href="home.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="attendance.html">Attendance</a></li></ul></nav>
+<div><h3>Contact</h3><p>Email: info@abccollege.edu<br>Phone: +91 80 1234 5678<br>12 College Road, Bengaluru, Karnataka</p></div>
+<div><button class="btn" type="button" data-logout>Logout</button></div></div>
+<p class="copy">© 2026 ABC College of Computer Applications. All Rights Reserved.</p></footer>
+<script src="script.js"></script></body></html>
