@@ -1,12 +1,54 @@
 # Student Attendance Management System
-Frontend-only project (HTML5, CSS3, vanilla JavaScript). No backend, no frameworks.
 
-## Run
-Open `index.html` in any modern browser. No server or install needed.
+A professional frontend-based Student Attendance Management System built using **HTML5, CSS3, and Vanilla JavaScript**.
 
-## Demo logins
-- Student: student@gmail.com / student123 (or ID BCA001)
-- Teacher: teacher@gmail.com / teacher123
+The system provides separate interfaces for **students and teachers**, allowing students to view their attendance and teachers to monitor attendance records.
 
-## Files
-index.html (login), home.html, about.html, attendance.html (student only), teacher.html (teacher only), style.css, script.js, assets/logo.png (replace with your own logo).
+
+### 👨‍🎓 Student
+
+- Student login
+- Student dashboard
+- View attendance percentage
+- View total classes
+- View present and absent days
+- Subject-wise attendance
+- Recent attendance log
+- Attendance status notification
+- Responsive user interface
+
+###  Teacher
+
+- Teacher login
+- Teacher dashboard
+- View all students
+- Search students
+- Filter student records
+- View individual student details
+- View subject-wise attendance
+- View attendance statistics
+- Monitor students with low attendance
+
+##  Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- DOM Manipulation
+- Event Handling
+
+## Project Structure
+
+
+Students-Attendance-Management/
+│
+├── index.html
+├── home.html
+├── about.html
+├── attendance.html
+├── teacher.html
+├── style.css
+├── script.js
+│
+└── assets/
+    └── logo.png
